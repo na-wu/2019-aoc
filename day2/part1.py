@@ -4,6 +4,9 @@ with open('./input1.txt', 'r') as file:
     print("========== INPUT ==========")
     print(listInt)
 
+    listInt[1] = 12
+    listInt[2] = 2
+
     for i in range(0, len(listInt), 4):
         if listInt[i] == 99:
             print("Opcode 99, halting")
