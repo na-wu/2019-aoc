@@ -3,7 +3,6 @@ def handleOp(arr: list, j: int, k: int) -> None:
     arr[2] = k
     for i in range(0, len(arr)-1, 4):
         if arr[i] == 99:
-            print("Opcode 99, Halting.")
             return
         if arr[i] != 1 and arr[i] != 2 and arr[i] != 99:
             print("Something went wrong!")
